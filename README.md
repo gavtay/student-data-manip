@@ -1,15 +1,39 @@
-Student Data Manipulation
+# Student Data Manipulation
 
+## Overview
 
-Scenario: 
+This C++ project involves the migration of an existing student system to a new platform, focusing on implementing key Object-Oriented Programming (OOP) concepts. The project consists of creating two classes, namely `Student` and `Roster`, which collectively manage student data and manipulations.
 
-You are hired as a contractor to help a university migrate an existing student system to a new platform using C++ language. Since the application already exists, its requirements exist as well, and they are outlined in the next section. You are responsible for implementing the part of the system based on these requirements. A list of data is provided as part of these requirements. This part of the system is responsible for reading and manipulating the provided data.
+## Scenario
 
-You must write a program containing two classes (i.e., Student and Roster). The program will maintain a current roster of students within a given course. Student data for the program include student ID, first name, last name, email address, age, an array of the number of days to complete each course, and degree program. This information can be found in the “studentData Table” below. The program will read a list of five students and use function calls to manipulate data (see part F4 in the requirements below). While parsing the list of data, the program should create student objects. The entire student list will be stored in one array of students called classRosterArray. Specific data-related output will be directed to the console.
+As a contractor for a university, the task involves transferring an existing student system to a new platform using C++. The provided requirements outline the scope of the project, which is to read and manipulate student data. The existing data includes student information such as student ID, first name, last name, email address, age, course completion days, and degree program.
 
+## Key Features
 
-The data should be input as follows:
+- Implementation of the four pillars of OOP: encapsulation, inheritance, abstraction, and polymorphism.
+- Use of two main classes: `Student` and `Roster`, each responsible for distinct aspects of student data management.
 
-const string studentData[] = 
+## Requirements
 
-{"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY", "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK", "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE", "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY", "A5,[firstname],[lastname],[emailaddress],[age], [numberofdaystocomplete3courses],SOFTWARE"
+The project entails the following components:
+
+1. **Student Class:** Represents individual student data with attributes such as student ID, personal information, course completion days, and degree program.
+
+2. **Roster Class:** Manages a current roster of students within a given course. It handles functions related to adding students, removing students, and printing student information.
+
+3. **Parsing Data:** The program reads a predefined list of student data entries, creating student objects as it parses the data.
+
+4. **Data Manipulation:** The program should demonstrate the manipulation of student data using appropriate function calls, ensuring that the specified data-related outputs are directed to the console.
+
+## Usage
+
+To compile and run the program, follow these steps:
+
+1. Clone this repository to your local machine.
+
+2. Navigate to the project directory using the terminal.
+
+3. Use a C++ compiler to compile the source code files:
+
+   ```bash
+   g++ -o main main.cpp Student.cpp Roster.cpp
